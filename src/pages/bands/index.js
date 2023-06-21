@@ -24,6 +24,8 @@ const Bands = ({ bands }) => {
           <h3>{band.name}</h3>
          </Link>
          ))}
+
+        
       </div>
     </div>
   );

@@ -38,9 +38,9 @@ const ThankYouPage = () => {
       });
 
 
-  }, []);
+   }, []);
 
-  return (
+   return (
     <>
       <Head>
         <title>Thank You</title>

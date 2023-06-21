@@ -7,6 +7,7 @@ export const getStaticPaths = async () => {
   const paths = data.map((band) => {
     return {
       params: { id: band.slug ? band.slug.toString() : "" },
+      // params: { id: `${band.act}`.slug ? `${band.act}`.slug.toString() : "" },
     };
   });
 
@@ -15,6 +16,8 @@ export const getStaticPaths = async () => {
     fallback: false,
   };
 };
+
+
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
